@@ -1,3 +1,4 @@
+#1
 // Given a side of cube, find perimetr(P).
 
 #include <iostream>
@@ -11,6 +12,7 @@ int main() {
 }
 
 
+#2
 /* given sides of rectangle a, b. find area and perimetr,
 and write solution step by step.*/
 
@@ -28,4 +30,26 @@ int main() {
    
   cout << "A = "<< a << "*" << b << endl;
   cout << "A = " << a * b << endl;
+}
+
+
+#3
+// Given an edge of cube, find volume andrea of a cube.
+
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+int main() {
+  int a;
+  cin >> a;
+
+  // volume of a cube
+  cout << "V = " << a << "^" << 3 << endl;
+  cout << "V = " << pow(a, 3);
+  cout << " " << endl;
+  
+  // area of a cube
+  cout << "A = (" << a << "^" << 2 << ") * 6" << endl;
+  cout << "A = " << pow(a, 2) * 6;
 }

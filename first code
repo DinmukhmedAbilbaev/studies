@@ -1,0 +1,11 @@
+// Given a side of cube, find perimetr(P).
+
+#include <iostream>
+
+using namespace std;
+int main() {
+   int side;
+   cout << " write down side of a cube. ";
+   cin >> side;
+   cout << "P = " << side * 4 << endl;
+}

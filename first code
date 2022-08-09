@@ -9,3 +9,23 @@ int main() {
    cin >> side;
    cout << "P = " << side * 4 << endl;
 }
+
+
+/* given sides of rectangle a, b. find area and perimetr,
+and write solution step by step.*/
+
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+int main() {
+  int a, b;
+  cin >> a >> b;
+  
+  cout << "P = (" << a << "*" << b << ") * 2" << endl;
+  cout << "P = " << ( a + b ) * 2 << endl;
+  cout << " " << endl;
+   
+  cout << "A = "<< a << "*" << b << endl;
+  cout << "A = " << a * b << endl;
+}

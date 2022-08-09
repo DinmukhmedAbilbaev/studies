@@ -53,3 +53,26 @@ int main() {
   cout << "A = (" << a << "^" << 2 << ") * 6" << endl;
   cout << "A = " << pow(a, 2) * 6;
 }
+
+
+#4
+//Given radius of a circle, find perimetr and area of a circle.
+
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+int main() {
+  int r;
+  double pi = 3.14;
+  cin >> r;
+  
+  //FIND CIRCUMFERENCE
+  cout << "C = 2 * " << pi << " * " << r << endl;
+  cout << "C = " << 2 * pi * r << endl;
+  cout << " " << endl;
+  
+  // FIND AREA OF CIRCLE
+  cout << "A = " << pi << " * " << r << "^2" << endl;
+  cout << "A = " << pi * pow(r, 2);
+}

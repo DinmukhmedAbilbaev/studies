@@ -1,2 +1,0 @@
-# studies
-Started learning

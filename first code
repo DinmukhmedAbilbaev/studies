@@ -76,3 +76,103 @@ int main() {
   cout << "A = " << pi << " * " << r << "^2" << endl;
   cout << "A = " << pi * pow(r, 2);
 }
+
+
+#5
+// find volume amd area of right parallelepiped (cuboid).
+
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+int main() {
+ int a, b ,c;
+ cout << "Given length of edge of cuboid a, b, c." << endl;
+ cin >> a >> b >> c;
+ 
+ //find volume of cuboid (V)
+ cout << "V = " << a << " * " << b << " * " << c << endl;
+ cout << "V = " << a * b * c << endl;
+ 
+ //find area od cuboid (A)
+ cout << "A = 2 * (" << a <<  " * " <<  b << " + " << a << " * " << c << " + " << b << " * " << c << ")" << endl;
+ cout << "A = " << 2 * (a * b + a * c + c * b) << endl;
+}
+
+
+#6
+// Arithmetic mean of 2 numbers.
+
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+int main() {
+ int a, b;
+ cout << "find arithmetic mean of two numbers" << endl;
+ cin >> a >> b;
+ 
+ cout << "Mean = (" << a << " + " << b << ") / 2" << endl;
+ cout << "Mean = " << (a + b) / 2;
+}
+
+#7
+//find geometric mean of 2 numbers.
+
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+int main() {
+  int a, b;
+  cout << "find geometric mean of two numbers" << endl;
+  cin >> a >> b;
+  
+  cout << "Mean = sqrt(" << a << " * " << b << ")" << endl;
+  cout << "Mean = " << sqrt(a * b) << endl;
+}
+
+
+#8
+//given 2 numbers (which both of them are not equal to 0), find sum, subtraction, multiplication, division of squares og this numbers.
+
+1st solution
+
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+int main() {
+   int a, b;
+   cin >> a >> b;
+   
+   if (a == 0) {
+       cout << "error!!" << endl;
+   } else if (b == 0) {
+       cout << "error!!" << endl;
+   } else {
+       cout << a << " + " << b << " = " << a + b << endl;
+       cout << a << " - " << b << " = " << a - b << endl;
+       cout << a << " * " << b << " = " << a * b << endl;
+       cout << a << " ^2 " << " / " <<  b << " ^2 ";
+       cout << " = " << pow(a, 2) / pow(b, 2) << endl;
+    }
+}
+
+2nd solution
+
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+int main() {
+   int a, b;
+   cout << " a and b don't equal to 0. " << endl;
+   cin >> a >> b;
+   
+     cout << a << " + " << b << " = " << a + b << endl;
+     cout << a << " - " << b << " = " << a - b << endl;
+     cout << a << " * " << b << " = " << a * b << endl;
+     cout << a << " ^2 " << " / " <<  b << " ^2 ";
+     cout << " = " << pow(a, 2) / pow(b, 2) << endl;
+}

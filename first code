@@ -176,3 +176,50 @@ int main() {
      cout << a << " ^2 " << " / " <<  b << " ^2 ";
      cout << " = " << pow(a, 2) / pow(b, 2) << endl;
 }
+
+
+#9
+// Given 2 variables, find sum, subtraction, multiplication, and division of his modules.
+
+#include <iostream>
+#include <cmath>
+ 
+using namespace std;
+int main() {
+   int a, b;
+   cin >> a >> b;
+   
+     if (a == 0) {
+         cout << "error!" << endl;
+     } else if (b == 0) {
+         cout << "error!" << endl;
+     } else {
+         cout << a << " + " << b << " = " << a + b << endl;
+         cout << a << " - " << b << " = " << a - b << endl;
+         cout << a << " * " << b << " = " << a * b << endl;
+         cout << "sqrt(" <<  a << "^2)" << " / " << "sqrt(" << b << "^2)";
+         cout << " = " << sqrt(pow(a, 2)) / sqrt(pow(b, 2));
+     }
+
+ return 0;
+}
+
+
+#10
+//given 2 legs of right triangle, find hypotenuse and perimetr.
+
+#include <iostream>
+#include <cmath>
+ 
+using namespace std;
+int main() {
+   int a, b;
+   cin >> a >> b;
+   int h;
+   
+     cout << "sqrt(" << a << "^2 + " << b << "^2)" << " = ";
+     cout << sqrt(pow(a, 2) + pow(b, 2)) << endl;
+      h = sqrt(pow(a, 2) + pow(b, 2));
+     cout << "P = " << a << " + " << b << " + " << h << " = ";
+     cout << a + b + h;
+}

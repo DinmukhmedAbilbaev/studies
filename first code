@@ -223,3 +223,41 @@ int main() {
      cout << "P = " << a << " + " << b << " + " << h << " = ";
      cout << a + b + h;
 }
+
+
+#11
+/* Given 2 circles with general centre and radiuses r1, r2 (r2 > r1), find areas of this circles, and then area of third circle, 
+   which one outter radius = r2, and inner radius = r1.  */
+   
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+int main() {
+   int r1, r2;
+   cout << "insert two radiuses of two cirlces which have the same centre.";
+   cout << " (r2 > r1)" << endl;
+  
+   cout << "1st radius: ";
+   cin >> r1;
+   cout << "2nd radius: ";
+   cin >> r2;
+   
+   int A1, A2;   
+   int pi = 3.14;
+   
+   // find area of interior circle 
+   cout << "A1 = " << pi << " * " << r1 << "^2" << endl;
+   cout << "A1 = " << pi * pow(r1, 2) << endl;
+   A1 = pi * pow(r1, 2);
+   
+   // find area of exterior circle
+   cout << "A2 = " << pi << " * " << r2 << "^2" << endl;
+   cout << "A2 = " << pi * pow(r2, 2) << endl; 
+   A2 = pi * pow(r2, 2);
+   
+   // find area of 3rd circle which outer radius = r2, inner radius = r1.
+   cout << "A3 = " << A2 << " - " << A1 << endl;
+   cout << "A3 = " << A2 - A1;
+}   
+

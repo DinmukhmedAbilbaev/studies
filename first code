@@ -261,3 +261,31 @@ int main() {
    cout << "A3 = " << A2 - A1;
 }   
 
+
+#12
+// given circumference , find radius and area of circle and take 3.14 as a value of a pi.
+
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+int main() {
+   int C;
+   cout << "Write down circumference of circle (C):  ";
+   cin >> C;
+   double pi = 3.14;
+   double r, A;
+   
+   //find radius of circle.
+   cout << "r = C / (2*pi)" << endl;
+   cout << "r = " << C << " / (2*" << pi << ")" << endl;
+   cout << "r = " << C/(2*pi) <<endl;
+   r = C/(2*pi);
+   cout << " " << endl;
+   
+   //find area of circle
+   cout << "A = pi*r^2" << endl;
+   cout << "A = " << pi << "*" << r << "^2" << endl;
+   cout << "A = " << pi*pow(r, 2) << endl;
+   A = pi*pow(r, 2);
+}

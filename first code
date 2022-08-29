@@ -289,3 +289,95 @@ int main() {
    cout << "A = " << pi*pow(r, 2) << endl;
    A = pi*pow(r, 2);
 }
+
+
+#13
+// given area of circle, find diameter and circumference , and take value of a pi as 3.14.
+
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+int main() {
+   int A;
+   double D, C;
+   cout << "Insert area of circle (A): ";
+   cin >> A;
+   
+   double pi = 3.14;
+   
+   // find diameter of a circle (D)
+   cout << "D = 2 * sqrt(A / pi)" << endl;
+   cout << "D = 2 * sqrt(" << A << " / " << pi << ")" << endl;
+   cout << "D = " << 2 * sqrt(A / pi) << endl;
+   D = 2 * sqrt(A / pi);
+   cout << " " <<endl;
+   
+    // find circumference (C)
+    cout << "C = pi * D" << endl;
+    cout << "C = " << pi << " * " << D << endl;
+    cout << "C = " << pi * D << endl;
+    C = pi * D;
+} 
+
+
+#14 
+//given 2 points in coordinate plane, find distance between them.
+
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+int main() {
+  int x1, x2;
+  cout << "Insert 2 points in a coordinate plane: ";
+  cin >> x1 >> x2;
+  
+  // find distance between 2 points (d)
+  cout << "|d| = |x2 - x1|" << endl;
+  cout << "|d| = |" << x2 << " - " << x1 <<"|" << endl;
+  cout << "|d| = " << abs(x2 - x1) << endl;
+} 
+
+
+#15 
+//given 3 points A, B, C, find |AB| , |AC| and then sum of  |AB| + |AC|.
+
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+int main() {
+   int Ax, Bx, Cx;
+   int Ay, By, Cy;
+   cout << "given 3 points in coordinate plane: ";
+   cin >> Ax >> Bx >> Cx;
+   cin >> Ay >> By >> Cy;
+   
+   int AB, AC, S;
+   
+   // find |AB|.
+   cout << "|AB| = (Ax - Bx)^2 + (Ay - By)^2" << endl;
+   cout << "|AB| = (" << Ax << " - " << Bx << ")^2 + "; 
+   cout << "(" << Ay << " - " << By << ")^2" << endl;
+   
+   cout << "|AB| = " << abs(pow((Ax - Bx), 2) + pow((Ay - By), 2)) << endl;
+   AB = abs(pow((Ax - Bx), 2) + pow((Ay - By), 2));
+   cout << " " << endl;
+    
+   //find |AC|.
+   cout << "|AC| = (Ax - Cx)^2 + (Ay - Cy)^2 " << endl;
+   cout << "|AC| = (" << Ax << " - " << Cx << ")^2 + ";
+   cout << "(" << Ay << " - " << Cy << ")^2" << endl;
+
+   cout << "|AC| = " << abs(pow((Ax - Cx), 2) + pow((Ay - Cy), 2)) << endl;
+   AC = abs(pow((Ax - Cx), 2) + pow((Ay - Cy), 2));
+   cout << " " << endl;
+
+    //find sum of |AB| + |AC|.
+    cout << "S = |AB| + |AC|" << endl;
+    cout << "S = " << AB << " + " << AC << endl;
+    cout << "S = " << AB + AC << endl;
+    S = AB + AC;
+    
+} 
